@@ -10,7 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-  },
-  "dependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "colors": "^1.3.3"
+  }
 }
