@@ -1,18 +1,18 @@
-function ConvertTime(time) {
-    var h = (time/3600);
-    var hs = (time%3600);
-    var m = (hs/60);
-    var s = (hs%60);
+function converttime(time) {
+    var h = parseInt(time/3600);
+    var hs = parseInt(time%3600);
+    var m = parseInt(hs/60);
+    var s = parseInt(hs%60);
     if (time > 0) {
         if (h > 0) {
-            return(h.toFixed(0) + ' Hours  ' + m.toFixed(0) + ' Minutes  ' + s.toFixed(0) + ' Seconds');
+            return(h + ' Hours  ' + m + ' Minutes  ' + s + ' Seconds');
         }
         else {
-            creturn(m.toFixed(0) + ' Minutes  ' + s.toFixed(0) + ' Seconds');
+            return(m + ' Minutes  ' + s + ' Seconds');
         }
     }
     else {
-        return(s.toFixed(0) + ' Seconds');
+        return(s + ' Seconds');
     }
 }
-exports.Convert = ConvertTime;
+exports.convert = converttime;
